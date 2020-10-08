@@ -87,6 +87,9 @@ class COCO:
             # self.dataset = dataset
             # self.createIndex()
             
+            
+            #Updated by Johan so that the annotation_file isn't read
+            #Rather the json data is simply provided. Saves a bit of time.
             dataset = annotation_file
             assert type(dataset)==dict, 'annotation data format {} not supported'.format(type(dataset))
             self.dataset = dataset
